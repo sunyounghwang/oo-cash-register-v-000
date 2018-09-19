@@ -24,7 +24,6 @@ class CashRegister
 
   def void_last_transaction
     self.total -= last_transaction
-    prices.delete(items.last)
     last_quantity.times do
       items.pop
     end
