@@ -22,8 +22,6 @@ class CashRegister
   end
 
   def void_last_transaction
-    last_quantity = prices[items.last][0]
-    last_price = prices[items.last][1]
     self.total -= last_quantity * last_price
     prices.delete(items.last)
     last_quantity.times do
