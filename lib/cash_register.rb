@@ -11,8 +11,8 @@ class CashRegister
     quantity.times do
       items << title
     end
-    prices[title] = [quantity, price]
     self.total += price * quantity
+    self.last_transaction = price * quantity
   end
 
   def apply_discount
