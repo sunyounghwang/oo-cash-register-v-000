@@ -4,8 +4,7 @@ class CashRegister
   def initialize(discount=0)
     @total = 0
     @discount = discount
-    items.clear
-    prices.clear
+    @items = []
   end
 
   def items
