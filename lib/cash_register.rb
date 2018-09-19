@@ -7,14 +7,6 @@ class CashRegister
     @items = []
   end
 
-  def items
-    @@items
-  end
-
-  def prices
-    @@prices
-  end
-
   def add_item(title, price, quantity=1)
     quantity.times do
       items << title
